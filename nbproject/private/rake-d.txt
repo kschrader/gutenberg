@@ -1,0 +1,12 @@
+audit\:actions=Print out controllers and their actions (use CONTROLLER=Foo,Bar to be selective)
+audit\:controllers=Print out all controllers
+audit\:routes=Print out the named and anonymous routes
+merb_env=start runner environment
+spec=Run specs, run a specific spec with TASK=spec/path_to_spec.rb
+spec\:clobber_coverage=Remove rcov products for coverage
+spec\:controller=Run all controller specs, run a spec for a specific Controller with CONTROLLER=MyController
+spec\:coverage=Run specs and check coverage with rcov
+spec\:default=Run specs
+spec\:html=Run all specs and output the result in html
+spec\:model=Run all model specs, run a spec for a specific Model with MODEL=MyModel
+spec\:view=Run all view specs, run specs for a specific controller (and view) with CONTROLLER=MyController (VIEW=MyView)
