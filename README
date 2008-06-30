@@ -1,0 +1,4 @@
+Gutenberg is intended to be a simple bit of blogging software based on merb
+that I'm planning on replacing Typo with to power my blog.
+
+The plan is make something as fast and as lean as possible.
