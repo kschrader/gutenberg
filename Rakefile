@@ -74,3 +74,5 @@ end
 # ADD YOUR CUSTOM TASKS IN /lib/tasks
 # NAME YOUR RAKE FILES file_name.rake
 ##############################################################################
+
+task :default => :spec
