@@ -1,9 +1,30 @@
 require File.join(File.dirname(__FILE__), "..", 'spec_helper.rb')
 
 describe Posts, "index action" do
+  before(:each) do
+    post = mock_model(Post)
+    @posts = [post]
+    Post.stub!(:all).and_return(@posts)
+  end
 
-  it "should show all of the posts in the system" do
-    Post.should_receive(:all).and_return([mock_model(Post, :title => "Kurt")])
-    dispatch_to(Posts, :index)
+  def do_get
+    dispatch_to(Posts, :index) do |controller|
+      controller.stub!(:render)
+    end
+  end
+
+  it "should be successful" do
+    do_get.should be_successful
+  end
+
+  it "should load all of the Post records" do
+    Post.should_receive(:all).and_return(@posts)
+    do_get.assigns(:posts).should == @posts
+  end
+
+  it "should display all of the posts" do
+    dispatch_to(Posts, :index) do |controller|
+      controller.should_receive(:render)
+    end
   end
 end
