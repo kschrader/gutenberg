@@ -1,1 +1,5 @@
-You're in index of the Posts
+- if @posts.empty?
+  No posts yet. Why don't you write one?
+-else
+  - for post in @posts
+    = post.title

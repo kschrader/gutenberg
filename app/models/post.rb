@@ -5,6 +5,7 @@ class Post
   property :title, String
   property :body, Text
   property :created_at, DateTime
+  property :published, Boolean
 
   has n, :comments
   has n, :categorizations
