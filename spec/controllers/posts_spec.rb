@@ -17,8 +17,8 @@ describe Posts, "index action" do
     do_get.should be_successful
   end
 
-  it "should load all of the Post records" do
-    Post.should_receive(:all).and_return(@posts)
+  it "should load all of the published Post records" do
+    Post.should_receive(:all).with(:conditions => ['published = ?', true]).and_return(@posts)
     do_get.assigns(:posts).should == @posts
   end
 
