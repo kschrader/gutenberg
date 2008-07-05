@@ -2,5 +2,20 @@
 %html
   %head
     %title Gutenberg
+    = css_include_tag :application
   %body
-    = catch_content :for_layout
+    #container
+      #header
+        %h1
+          %span Some Title
+        %h2 And a subtitle
+      #page
+        #content
+          = catch_content :for_layout
+        #sidebar
+          Some sidebar stuff
+        #footer
+          %p Blog link
+          %ul
+            %li= "Powered by Gutenberg"
+              
