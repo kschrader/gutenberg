@@ -2,9 +2,10 @@ class Post
   include DataMapper::Resource
 
   property :id, Integer, :serial => true
-  property :title, String
+  property :title, Text
   property :body, Text
   property :created_at, DateTime
+  property :published_at, DateTime
   property :published, Boolean
 
   has n, :comments
