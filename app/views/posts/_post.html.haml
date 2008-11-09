@@ -3,4 +3,4 @@
     = post.title
 
   #content
-    = post.body
+    = Markdown.new(post.body).to_html
