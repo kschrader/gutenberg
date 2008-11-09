@@ -1,16 +1,19 @@
 ---
 # This is a sample database file for the DataMapper ORM
-:development: &defaults
-  :adapter: mysql
-  :database: gutenberg_dev
-  :username: root
-  :password: 
-  :host: localhost
+development: &defaults
+  adapter: mysql
+  database: gutenberg_dev
+  username: root
+  password: 
+  host: localhost
 
-:test:
+test:
   <<: *defaults
-  :database: gutenberg_test
+  database: gutenberg_test
 
-:production:
+production:
   <<: *defaults
-  :database: gutenberg_prod
+  database: gutenberg_prod
+  
+rake:
+  <<: *defaults
