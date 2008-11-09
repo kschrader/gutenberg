@@ -4,3 +4,5 @@ that I'm planning on replacing Typo with to power my blog.
 The plan is make something as fast and as lean as possible.
 
 Run the specs with "./bin/rake"
+
+Make sure that you set your disqus id in the config/init.rb file.

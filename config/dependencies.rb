@@ -23,3 +23,4 @@ dependency "dm-types", dm_gems_version
 dependency "dm-validations", dm_gems_version
 dependency "will_paginate", "2.5.0"
 dependency "rdiscount", "1.2.11"
+dependency "disqus", "0.1.1"

@@ -1,6 +1,6 @@
 %div{:class => "atomentry", :id => "article-#{post.id}"}
   %h2{:class => "title"}
-    %a{:class => ""}= post.title
+    %a{:href => "#{url(:post, post)}", :class => ""}= post.title
     %span{:class => "comment_count"}= post.comments.count
     %p{ :class => "author"}
       Posted by
