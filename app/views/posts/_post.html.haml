@@ -1,6 +1,12 @@
 %div{:class => "atomentry", :id => "article-#{post.id}"}
   %h2{:class => "title"}
-    = post.title
+    %a{:class => ""}= post.title
+    %span{:class => "comment_count"}= post.comments.count
+    %p{ :class => "author"}
+      Posted by
+      %cite Kurt Schrader
+      %abbr{:class => "published", :title => "#{post.published_at}"}
+        %span{:class => "typo_date"}= "on #{relative_date(post.published_at)}"
 
   #content
     = Markdown.new(post.body).to_html
