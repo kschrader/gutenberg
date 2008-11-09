@@ -13,6 +13,8 @@ Merb::Config.use do |c|
   # cookie session store configuration
   c[:session_secret_key]  = 'bbed00b9d3a65c26255628cfbef6e11f37a1802f'  # required for cookie session store
   # c[:session_id_key] = '_session_id' # cookie session id key, defaults to "_session_id"
+  c[:blog_title] = 'Schrade.Blog'
+  c[:blog_subtitle] = 'Tech and Business Ramblings by Kurt Schrader'
 end
  
 Merb::BootLoader.before_app_loads do
@@ -20,6 +22,7 @@ Merb::BootLoader.before_app_loads do
 end
  
 Merb::BootLoader.after_app_loads do
+
   Disqus::defaults[:account] = "kschrader"
   # This will get executed after your app's classes have been loaded.
 end
