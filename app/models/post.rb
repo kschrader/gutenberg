@@ -12,4 +12,8 @@ class Post
   has n, :categorizations
   has n, :categories, :through => :categorizations
   
+  def body_html
+    Markdown.new(self.body).to_html
+  end
+
 end

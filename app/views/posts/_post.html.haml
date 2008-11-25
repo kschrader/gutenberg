@@ -9,4 +9,4 @@
         %span{:class => "typo_date"}= "on #{relative_date(post.published_at)}"
 
   #content
-    = Markdown.new(post.body).to_html
+    = post.body_html
