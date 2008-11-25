@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title Gutenberg
+    %title= blog_title
     = css_include_tag :application
   %body
     #container
@@ -12,8 +12,6 @@
       #page
         #content
           = catch_content :for_layout
-        #sidebar
-          Some sidebar stuff
         #footer
           %p Blog link
           %ul
