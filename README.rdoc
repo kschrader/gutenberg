@@ -25,6 +25,7 @@ Run the specs with "./bin/rake"
 == Currently Implemented Features
 
 * Posts
+* Markdown
 * Disqus comments
 * Typo import
 
