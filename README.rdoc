@@ -1,21 +1,35 @@
 = Gutenberg
 
-Gutenberg is intended to be an ultra-lightweight bit of blogging software based
-on Merb. I'm planning on replacing Typo with to power my blog. It's also a good
-example of a simple Merb application to learn from.
+Gutenberg is an ultra-lightweight bit of blogging software based
+on Merb. I'm planning on replacing Typo with it to power my blog
+(http://kurt.karmalab.org).
+
+It's also a good example of a simple Merb application to learn from.
 
 The plan is make something as fast and as lean as possible.
 
 == Installation
 
-* Set your disqus id in the config/init.rb file.
+* Set your Disqus id in the config/init.rb file.
 * Make sure you have thor installed ('sudo gem install thor').
 * Run 'thor merb:gem:redeploy' in the root directory to install the gems locally.
 * Set things up in database.yml and create the database to store your data in.
 * Run './bin/rake db:autoupgrade' from the install directory to set up the database tables.
-* Convert your old typo database over using ' ruby db/converters/typo.rb --db TYPO_DB_NAME'
+* Convert your old typo database over using 'ruby db/converters/typo.rb --db TYPO_DB_NAME'
 * Run the app with './bin/merb'
 
 == Specs
 
 Run the specs with "./bin/rake"
+
+== Currently Implemented Features
+
+* Posts
+* Disqus comments
+* Typo import
+
+== Todo for v0.1
+
+* Old comment import into Disqus
+* Ability to actually write a new post (kind of important...)
+* RSS Feeds
