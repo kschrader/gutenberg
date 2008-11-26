@@ -25,6 +25,18 @@
 	float: left;
 }
 
+#header h1 a:link,
+#header h1 a:visited {
+	color:#000;
+	text-decoration: none;
+}
+
+#header h1 a:hover,
+#header h1 a:active {
+	color:#930; background: transparent;
+	text-decoration: none;
+}
+
 #header h2 {
 	font: normal 12px verdana, arial, sans-serif;
 	margin: 2.5em 0 0 0.8em;

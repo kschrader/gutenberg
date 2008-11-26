@@ -7,13 +7,13 @@
     #container
       #header
         %h1
-          %span= blog_title
+          %span= link_to blog_title, '/'
         %h2= blog_subtitle
       #page
         #content
           = catch_content :for_layout
         #footer
-          %p Blog link
+          %p= link_to blog_title, '/'
           %ul
             %li= "Powered by #{link_to('Gutenberg', 'http://github.com/kschrader/gutenberg/')}/styled with #{link_to('scribbish', 'http://quotedprintable.com/pages/scribbish')}"
               
