@@ -33,3 +33,4 @@ Run the specs with "./bin/rake"
 * Old comment import into Disqus
 * Ability to actually write a new post (kind of important...)
 * RSS Feeds
+* Proper URL redirection from the old Typo URLs
