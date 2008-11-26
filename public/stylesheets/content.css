@@ -9,13 +9,13 @@
 #header a:link,
 #header a:visited {
 	color:#000;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 #header a:hover,
 #header a:active {
 	color:#930; background: transparent;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 #header h1 {
@@ -28,7 +28,7 @@
 #header h2 {
 	font: normal 12px verdana, arial, sans-serif;
 	margin: 2.5em 0 0 0.8em;
-	float: left;
+	float: right;
 }
 
 /*--------------------------------------------------------------
