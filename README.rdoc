@@ -5,6 +5,7 @@ on Merb. I'm planning on replacing Typo with it to power my blog
 (http://kurt.karmalab.org).
 
 It's also a good example of a simple Merb application to learn from.
+It uses frozen gems so you should be able to check it out Merb without installing any gems on your system.
 
 The plan is make something as fast and as lean as possible.
 
@@ -18,9 +19,10 @@ The plan is make something as fast and as lean as possible.
 * Convert your old typo database over using 'ruby db/converters/typo.rb --db TYPO_DB_NAME'
 * Run the app with './bin/merb'
 
-== Specs
+== Specs and Features
 
 Run the specs with "./bin/rake"
+
 Run the Cucumber features with "./bin/rake features"
 
 == Currently Implemented Features
