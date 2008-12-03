@@ -21,6 +21,7 @@ The plan is make something as fast and as lean as possible.
 == Specs
 
 Run the specs with "./bin/rake"
+Run the Cucumber features with "./bin/rake features"
 
 == Currently Implemented Features
 
