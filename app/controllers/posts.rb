@@ -1,5 +1,5 @@
 class Posts < Application
-  
+
   def index
     provides :rss
     @posts = Post.paginate(:per_page => 10, :page => params[:page], :conditions => ['published = ?', true], :order => [:published_at.desc])
@@ -10,5 +10,5 @@ class Posts < Application
     @post = Post.get(params[:id])
     render
   end
-  
+
 end
