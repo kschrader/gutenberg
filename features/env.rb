@@ -16,4 +16,4 @@ require "merb_cucumber/helpers/datamapper"
 # Merb::Test::World::Base.use_transactional_fixtures
 
 Merb.start_environment(:testing => true, :adapter => 'runner', :environment => ENV['MERB_ENV'] || 'test')
-  
+
